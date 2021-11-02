@@ -12,8 +12,8 @@ Couldn't be bothered to pay my taxes manually and work out how much I owe, so I 
 
 | Key | Content |
 |-----|---------|
-| MONZO_USER_ID | Whatever your Monzo user ID is, retrieve it from **[Monzo Developer API(https://developers.monzo.com/)**. |
-| MONZO_ACCESS_TOKEN | Whatever your Monzo Access Token is, retrieve it from **[Monzo Developer API(https://developers.monzo.com/)**. |
+| MONZO_USER_ID | Whatever your Monzo user ID is, retrieve it from **[Monzo Developer API](https://developers.monzo.com/)**. |
+| MONZO_ACCESS_TOKEN | Whatever your Monzo Access Token is, retrieve it from **[Monzo Developer API](https://developers.monzo.com/)**. |
 | TAX_RATE | The country within the UK in which you live, options include: *Scotland, England, Wales, Northern Ireland* |
 3. Run the app. 
 
