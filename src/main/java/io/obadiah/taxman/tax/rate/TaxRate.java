@@ -1,6 +1,6 @@
 package io.obadiah.taxman.tax.rate;
 
-public interface TaxRate {
+public sealed interface TaxRate permits EnglandWalesTaxRate, ScotlandTaxRate {
 
     int getIncomeStart();
 
