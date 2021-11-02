@@ -29,6 +29,7 @@ public enum EnglandWalesTaxRate implements TaxRate {
         this.taxablePercentage = taxablePercentage;
     }
 
+
     /**
      * @return The amount of money that must be earned in order to enter this bracket.
      */

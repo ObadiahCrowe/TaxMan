@@ -14,11 +14,11 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
-    implementation("org.springframework.boot:spring-boot-starter-data-rest")
-    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.5.6")
+    implementation("org.springframework.boot:spring-boot-starter-data-rest:2.5.6")
+    implementation("org.springframework.boot:spring-boot-starter-web:2.5.6")
 
     implementation("org.jetbrains:annotations:22.0.0")
 
-    runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
+    runtimeOnly("org.mariadb.jdbc:mariadb-java-client:2.7.4")
 }

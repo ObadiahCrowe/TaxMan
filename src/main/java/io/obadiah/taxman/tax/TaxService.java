@@ -17,6 +17,13 @@ public class TaxService {
         this.values = (System.getenv("TAX_RATE").equalsIgnoreCase("scotland") ? ScotlandTaxRate.class : EnglandWalesTaxRate.class).getEnumConstants();
     }
 
+    /**
+     * Gets the current income tax rate based on an individual's region.
+     *
+     * @param income The total income to calculate a tax rate from.
+     *
+     * @return The corresponding {@link TaxRate}.
+     */
     public @NotNull TaxRate getCurrentTaxRate(double income) {
         for (TaxRate rate : this.values) {
             if (rate.getIncomeStart() <= income && rate.getIncomeEnd() >= income) {
@@ -27,6 +34,13 @@ public class TaxService {
         return this.values[this.values.length - 1];
     }
 
+    /**
+     * Gets the total amount of income tax owed.
+     *
+     * @param income The total income to calculate the owing tax from.
+     *
+     * @return The amount of tax owed.
+     */
     public double getTaxableIncome(double income) {
         double totalTax = 0.0D;
 
