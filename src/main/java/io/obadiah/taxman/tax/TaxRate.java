@@ -1,5 +1,7 @@
 package io.obadiah.taxman.tax;
 
+import org.jetbrains.annotations.NotNull;
+
 public enum TaxRate {
 
     PERSONAL(0, 12570, 0.0D),
@@ -31,7 +33,7 @@ public enum TaxRate {
         return this.taxablePercentage;
     }
 
-    public static TaxRate getCurrentTaxRate(double income) {
+    public static @NotNull TaxRate getCurrentTaxRate(double income) {
         for (TaxRate rate : TaxRate.values()) {
             if (rate.getIncomeStart() <= income && rate.getIncomeEnd() >= income) {
                 return rate;
