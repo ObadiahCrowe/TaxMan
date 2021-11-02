@@ -21,12 +21,4 @@ dependencies {
     implementation("org.jetbrains:annotations:22.0.0")
 
     runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
-
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
-}
-
-tasks {
-    test {
-        useJUnitPlatform()
-    }
 }
