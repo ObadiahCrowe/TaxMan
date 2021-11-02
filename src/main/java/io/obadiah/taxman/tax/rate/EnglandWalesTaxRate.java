@@ -29,16 +29,25 @@ public enum EnglandWalesTaxRate implements TaxRate {
         this.taxablePercentage = taxablePercentage;
     }
 
+    /**
+     * @return The amount of money that must be earned in order to enter this bracket.
+     */
     @Override
     public int getIncomeStart() {
         return this.incomeStart;
     }
 
+    /**
+     * @return The cutoff threshold before an individual is moved into the next tax bracket, if any.
+     */
     @Override
     public int getIncomeEnd() {
         return this.incomeEnd;
     }
 
+    /**
+     * @return The percentage that the income within this bracket is taxed by.
+     */
     @Override
     public double getTaxablePercentage() {
         return this.taxablePercentage;
