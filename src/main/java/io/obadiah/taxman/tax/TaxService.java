@@ -31,7 +31,7 @@ public class TaxService {
         double totalTax = 0.0D;
 
         for (int i = 0; i < ((Enum<?>) getCurrentTaxRate(income)).ordinal() + 1; i++) {
-            ScotlandTaxRate rate = ScotlandTaxRate.values()[i];
+            TaxRate rate = this.values[i];
 
             double taxableAmount = Math.abs(Math.min(rate.getIncomeEnd(), income) - rate.getIncomeStart());
             double taxDue = taxableAmount * (rate.getTaxablePercentage() / 100.0D);
